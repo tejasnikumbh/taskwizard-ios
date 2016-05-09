@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */; };
+		CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */; };
+		CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */; };
+		CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C331CE0D802000EF83D /* SurveysViewController.swift */; };
 		CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */; };
 		CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */; };
 		CCFEB44A1CE02F3700A47F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEB4481CE02F3700A47F9F /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTasksViewController.swift; sourceTree = "<group>"; };
+		CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ExtraColors.swift"; sourceTree = "<group>"; };
+		CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeedbackViewController.swift; sourceTree = "<group>"; };
+		CC834C331CE0D802000EF83D /* SurveysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveysViewController.swift; sourceTree = "<group>"; };
 		CCFEB4411CE02F3600A47F9F /* taskwizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskwizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC834C2A1CE0C7D4000EF83D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
 		CCFEB4381CE02F3600A47F9F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 		CCFEB4431CE02F3700A47F9F /* taskwizard */ = {
 			isa = PBXGroup;
 			children = (
+				CC834C2A1CE0C7D4000EF83D /* extensions */,
 				CCFEB4781CE02F9200A47F9F /* assets */,
 				CCFEB4771CE02F7900A47F9F /* supporting */,
 				CCFEB4761CE02F7300A47F9F /* lib */,
@@ -141,6 +158,9 @@
 			children = (
 				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
 				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
+				CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */,
+				CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */,
+				CC834C331CE0D802000EF83D /* SurveysViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -315,9 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */,
 				CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */,
 				CCFEB47C1CE057C400A47F9F /* DisplayViewController.swift in Sources */,
 				CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */,
+				CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */,
+				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
+				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +568,7 @@
 				CCFEB46B1CE02F3700A47F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFEB46C1CE02F3700A47F9F /* Build configuration list for PBXNativeTarget "taskwizardTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +577,7 @@
 				CCFEB46E1CE02F3700A47F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFEB46F1CE02F3700A47F9F /* Build configuration list for PBXNativeTarget "taskwizardUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +586,7 @@
 				CCFEB4711CE02F3700A47F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -95,7 +95,13 @@ class DisplayViewController: UIViewController {
     }
     
     /* ==================================== IB Actions =========================================== */
-    @IBAction func signInTapped(sender: UIButton) {}
+    @IBAction func signInTapped(sender: UIButton) {
+        if(true) {
+            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("HomeViewNavigationController")
+            viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func forgotPasswordTapped(sender: UIButton) {}
    
