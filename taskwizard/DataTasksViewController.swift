@@ -8,30 +8,18 @@
 
 import UIKit
 
-class DataTasksViewController: UIViewController {
+class DataTasksViewController: TWBaseFormViewController {
    
     var placeHolderMode = true
     var ownServer = false
+    
     
     @IBOutlet weak var dataTaskDescritpion: UITextView!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
     
-   override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        setupGestureRecognizers()
-    }
-    
-    
-    func setupGestureRecognizers() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self,
-                                                          action: #selector(DisplayViewController.resignKeyboard(_:)))
-        tapGestureRecognizer.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    func resignKeyboard(gestureRecognizer: UITapGestureRecognizer? = nil) {
-        view.endEditing(true)
     }
 
     @IBAction func yesButtonTapped(sender: UIButton)  {

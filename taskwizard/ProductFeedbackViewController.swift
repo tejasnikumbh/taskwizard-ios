@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ProductFeedbackViewController: UIViewController {
+class ProductFeedbackViewController: TWBaseFormViewController {
 
      override func viewDidLoad() {
         super.viewDidLoad()
     }
-   
-   
 
 }

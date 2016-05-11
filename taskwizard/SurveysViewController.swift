@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SurveysViewController: UIViewController {
+class SurveysViewController: TWBaseFormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1302,6 +1302,7 @@
                     <connections>
                         <outlet property="dataTaskDescritpion" destination="Hbf-10-Qto" id="U1g-q7-GPY"/>
                         <outlet property="noButton" destination="U05-vX-A3s" id="NMX-5X-naD"/>
+                        <outlet property="rootScrollView" destination="DDw-q5-N5y" id="ske-4k-Ts1"/>
                         <outlet property="yesButton" destination="4rV-Q5-lnk" id="6Ie-iE-Viu"/>
                     </connections>
                 </viewController>
@@ -2698,6 +2699,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
+                    <connections>
+                        <outlet property="rootScrollView" destination="Rau-2m-liF" id="ehw-ft-i6i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnj-j9-7fK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3393,6 +3397,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
+                    <connections>
+                        <outlet property="rootScrollView" destination="gcY-Wm-LDK" id="L1w-EI-fwx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sx3-YX-jYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
