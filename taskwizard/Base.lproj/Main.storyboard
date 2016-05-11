@@ -1574,7 +1574,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="noButtonTapped:" destination="7Yf-7K-aX1" eventType="touchUpInside" id="paV-En-JDo"/>
-                                    <segue destination="WU8-Hr-Dxb" kind="show" id="EhH-8T-9i5"/>
+                                    <segue destination="WU8-Hr-Dxb" kind="presentation" modalTransitionStyle="crossDissolve" id="eG6-6h-vqP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Survey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GK-3s-SY1">
@@ -1830,7 +1830,7 @@
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-g0-N0B">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.71048915293329129" green="0.32802293359972412" blue="0.3651450578449566" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.27843137254901962" green="0.28235294117647058" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="QUd-EQ-xa9"/>
                                     <constraint firstAttribute="height" constant="40" id="VhB-Sd-uxJ"/>
@@ -1869,11 +1869,12 @@
                                 </variation>
                                 <connections>
                                     <action selector="noButtonTapped:" destination="7Yf-7K-aX1" eventType="touchUpInside" id="0Vw-Hg-zin"/>
+                                    <action selector="noThanksButtonTapped:" destination="WU8-Hr-Dxb" eventType="touchUpInside" id="iSn-Uw-wsE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBV-sQ-yQG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.29516422060000003" green="0.85983139649999996" blue="0.01872203276" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.27843137254901962" green="0.28235294117647058" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="N8M-pg-MMy"/>
                                     <constraint firstAttribute="width" constant="84" id="QcF-iE-RDF"/>
@@ -1912,17 +1913,18 @@
                                 </variation>
                                 <connections>
                                     <action selector="noButtonTapped:" destination="7Yf-7K-aX1" eventType="touchUpInside" id="gTh-hU-fFK"/>
+                                    <action selector="submitButtonTapped:" destination="WU8-Hr-Dxb" eventType="touchUpInside" id="ssv-6c-blC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hBV-sQ-yQG" firstAttribute="centerX" secondItem="83r-EK-kyI" secondAttribute="centerX" id="4TV-Q0-nzx">
-                                <variation key="widthClass=compact" constant="-64"/>
+                                <variation key="widthClass=compact" constant="-56"/>
                             </constraint>
                             <constraint firstItem="hBV-sQ-yQG" firstAttribute="top" secondItem="fD3-RO-HkB" secondAttribute="bottom" constant="24" id="PrX-F0-C8Z"/>
                             <constraint firstItem="5Lz-g0-N0B" firstAttribute="centerX" secondItem="83r-EK-kyI" secondAttribute="centerX" id="QHi-C1-Y7I">
-                                <variation key="widthClass=compact" constant="64"/>
+                                <variation key="widthClass=compact" constant="56"/>
                             </constraint>
                             <constraint firstItem="tPx-hi-K5Z" firstAttribute="leading" secondItem="83r-EK-kyI" secondAttribute="leadingMargin" constant="6" id="Sgy-fw-I8y"/>
                             <constraint firstItem="fD3-RO-HkB" firstAttribute="top" secondItem="tPx-hi-K5Z" secondAttribute="bottom" constant="14.5" id="U92-wi-xzy">
@@ -2216,6 +2218,9 @@
                                                         <exclude reference="p4X-Bf-cMn"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="financeButtonTapped:" destination="7Yf-7K-aX1" eventType="touchUpInside" id="ChL-OE-NZU"/>
+                                                </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a brief one sentence description of your startup. Please keep it limited to 150 characters..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-ba-4HI">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -2241,8 +2246,11 @@
                                                         <include reference="g27-vb-qrr"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <outlet property="delegate" destination="7Yf-7K-aX1" id="D3p-Ha-ohA"/>
+                                                </connections>
                                             </textView>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgP-J1-zBH">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgP-J1-zBH">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                                 <color key="backgroundColor" red="0.85490196080000003" green="0.86666666670000003" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -2275,6 +2283,9 @@
                                                         <include reference="lRi-vy-btB"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="travelButtonTapped:" destination="7Yf-7K-aX1" eventType="touchUpInside" id="zHJ-xQ-nEK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbs-1H-75X">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2700,7 +2711,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
+                        <outlet property="financeButton" destination="pjX-UE-WEQ" id="1Da-bm-TZa"/>
+                        <outlet property="productDescription" destination="gqP-ba-4HI" id="mgU-Zr-hJG"/>
                         <outlet property="rootScrollView" destination="Rau-2m-liF" id="ehw-ft-i6i"/>
+                        <outlet property="travelButton" destination="KgP-J1-zBH" id="LbQ-s3-aF5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnj-j9-7fK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2837,7 +2851,7 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Link" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-OV-lT3">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Link" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-OV-lT3">
                                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <color key="textColor" red="0.34901960780000002" green="0.35294117650000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -2918,6 +2932,9 @@
                                                         <include reference="vz1-Nf-hIk"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="financeButtonTapped:" destination="DQ1-uX-AjN" eventType="touchUpInside" id="PJk-h1-Pk6"/>
+                                                </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a brief one sentence description of your startup. Please keep it limited to 150 characters..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BDB-zu-9Yr">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -2943,6 +2960,9 @@
                                                         <include reference="yZY-2o-nP9"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <outlet property="delegate" destination="DQ1-uX-AjN" id="274-o9-Je9"/>
+                                                </connections>
                                             </textView>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STn-aS-mBO">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2977,6 +2997,9 @@
                                                         <include reference="pt1-J9-6Ev"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="travelButtonTapped:" destination="DQ1-uX-AjN" eventType="touchUpInside" id="3QX-wH-krI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DY-6f-ckW">
                                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -3398,7 +3421,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
+                        <outlet property="financeButton" destination="CN5-Ge-4G7" id="C1L-jD-5rE"/>
                         <outlet property="rootScrollView" destination="gcY-Wm-LDK" id="L1w-EI-fwx"/>
+                        <outlet property="surveysDescription" destination="BDB-zu-9Yr" id="WqB-h4-m99"/>
+                        <outlet property="travelButton" destination="STn-aS-mBO" id="I78-Z1-tyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sx3-YX-jYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3411,6 +3437,6 @@
         <image name="radioButton" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LZV-pE-O83"/>
+        <segue reference="hX0-gw-Esk"/>
     </inferredMetricsTieBreakers>
 </document>

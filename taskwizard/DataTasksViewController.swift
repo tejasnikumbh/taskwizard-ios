@@ -13,7 +13,6 @@ class DataTasksViewController: TWBaseFormViewController {
     var placeHolderMode = true
     var ownServer = false
     
-    
     @IBOutlet weak var dataTaskDescritpion: UITextView!
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!

@@ -12,8 +12,14 @@ class ThankYouViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func submitButtonTapped(sender: UIButton!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func noThanksButtonTapped(sender: UIButton!) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

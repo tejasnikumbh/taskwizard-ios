@@ -15,6 +15,7 @@
 		CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C371CE2141C000EF83D /* PaymentViewController.swift */; };
 		CC834C3C1CE2C9E0000EF83D /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC834C3B1CE2C9E0000EF83D /* Stripe.framework */; };
 		CC834C3F1CE36B2E000EF83D /* TWBaseFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */; };
+		CC834C4A1CE38A36000EF83D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C491CE38A36000EF83D /* Enums.swift */; };
 		CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */; };
 		CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */; };
 		CCFEB44A1CE02F3700A47F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEB4481CE02F3700A47F9F /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		CC834C371CE2141C000EF83D /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CC834C3B1CE2C9E0000EF83D /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = ../Stripe.framework; sourceTree = "<group>"; };
 		CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWBaseFormViewController.swift; sourceTree = "<group>"; };
+		CC834C491CE38A36000EF83D /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CCFEB4411CE02F3600A47F9F /* taskwizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskwizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,50 @@
 			name = frameworks;
 			sourceTree = "<group>";
 		};
+		CC834C401CE38405000EF83D /* abstract */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */,
+			);
+			name = abstract;
+			sourceTree = "<group>";
+		};
+		CC834C411CE385F6000EF83D /* startapp_flow */ = {
+			isa = PBXGroup;
+			children = (
+				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
+				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
+			);
+			name = startapp_flow;
+			sourceTree = "<group>";
+		};
+		CC834C421CE3860E000EF83D /* tasks */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */,
+				CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */,
+				CC834C331CE0D802000EF83D /* SurveysViewController.swift */,
+			);
+			name = tasks;
+			sourceTree = "<group>";
+		};
+		CC834C431CE38645000EF83D /* payment_flow */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
+				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
+			);
+			name = payment_flow;
+			sourceTree = "<group>";
+		};
+		CC834C481CE38A2A000EF83D /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C491CE38A36000EF83D /* Enums.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		CCFEB4381CE02F3600A47F9F = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +178,7 @@
 		CCFEB4431CE02F3700A47F9F /* taskwizard */ = {
 			isa = PBXGroup;
 			children = (
+				CC834C481CE38A2A000EF83D /* common */,
 				CC834C3D1CE2C9E9000EF83D /* frameworks */,
 				CC834C2A1CE0C7D4000EF83D /* extensions */,
 				CCFEB4781CE02F9200A47F9F /* assets */,
@@ -174,14 +221,10 @@
 		CCFEB4731CE02F4D00A47F9F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
-				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
-				CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */,
-				CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */,
-				CC834C331CE0D802000EF83D /* SurveysViewController.swift */,
-				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
-				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
-				CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */,
+				CC834C431CE38645000EF83D /* payment_flow */,
+				CC834C421CE3860E000EF83D /* tasks */,
+				CC834C411CE385F6000EF83D /* startapp_flow */,
+				CC834C401CE38405000EF83D /* abstract */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -366,6 +409,7 @@
 				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
 				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
 				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
+				CC834C4A1CE38A36000EF83D /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
