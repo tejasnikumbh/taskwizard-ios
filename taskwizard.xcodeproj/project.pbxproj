@@ -11,6 +11,9 @@
 		CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */; };
 		CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */; };
 		CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C331CE0D802000EF83D /* SurveysViewController.swift */; };
+		CC834C361CE213B3000EF83D /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C351CE213B3000EF83D /* ThankYouViewController.swift */; };
+		CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C371CE2141C000EF83D /* PaymentViewController.swift */; };
+		CC834C3C1CE2C9E0000EF83D /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC834C3B1CE2C9E0000EF83D /* Stripe.framework */; };
 		CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */; };
 		CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */; };
 		CCFEB44A1CE02F3700A47F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEB4481CE02F3700A47F9F /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ExtraColors.swift"; sourceTree = "<group>"; };
 		CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeedbackViewController.swift; sourceTree = "<group>"; };
 		CC834C331CE0D802000EF83D /* SurveysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveysViewController.swift; sourceTree = "<group>"; };
+		CC834C351CE213B3000EF83D /* ThankYouViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		CC834C371CE2141C000EF83D /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CC834C3B1CE2C9E0000EF83D /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = ../Stripe.framework; sourceTree = "<group>"; };
 		CCFEB4411CE02F3600A47F9F /* taskwizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskwizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC834C3C1CE2C9E0000EF83D /* Stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,14 @@
 			name = extensions;
 			sourceTree = "<group>";
 		};
+		CC834C3D1CE2C9E9000EF83D /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC834C3B1CE2C9E0000EF83D /* Stripe.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		CCFEB4381CE02F3600A47F9F = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +130,7 @@
 		CCFEB4431CE02F3700A47F9F /* taskwizard */ = {
 			isa = PBXGroup;
 			children = (
+				CC834C3D1CE2C9E9000EF83D /* frameworks */,
 				CC834C2A1CE0C7D4000EF83D /* extensions */,
 				CCFEB4781CE02F9200A47F9F /* assets */,
 				CCFEB4771CE02F7900A47F9F /* supporting */,
@@ -161,6 +177,8 @@
 				CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */,
 				CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */,
 				CC834C331CE0D802000EF83D /* SurveysViewController.swift */,
+				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
+				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -336,11 +354,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */,
+				CC834C361CE213B3000EF83D /* ThankYouViewController.swift in Sources */,
 				CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */,
 				CCFEB47C1CE057C400A47F9F /* DisplayViewController.swift in Sources */,
 				CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */,
 				CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */,
 				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
+				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
 				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,8 +505,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/taskwizard",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = taskwizard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beta96.taskwizard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,8 +522,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/taskwizard",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = taskwizard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beta96.taskwizard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
