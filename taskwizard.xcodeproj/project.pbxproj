@@ -15,6 +15,10 @@
 		CC7C97281CE419DC00BEDB3E /* ProductReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97271CE419DC00BEDB3E /* ProductReportCell.swift */; };
 		CC7C972A1CE419E600BEDB3E /* DataReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97291CE419E600BEDB3E /* DataReportCell.swift */; };
 		CC7C972C1CE4245700BEDB3E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C972B1CE4245700BEDB3E /* SettingsController.swift */; };
+		CC7C972E1CE436B000BEDB3E /* TWUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C972D1CE436B000BEDB3E /* TWUser.swift */; };
+		CC7C97301CE4397C00BEDB3E /* TWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C972F1CE4397C00BEDB3E /* TWSurvey.swift */; };
+		CC7C97321CE4398F00BEDB3E /* TWProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97311CE4398F00BEDB3E /* TWProduct.swift */; };
+		CC7C97341CE4399B00BEDB3E /* TWData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97331CE4399B00BEDB3E /* TWData.swift */; };
 		CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */; };
 		CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */; };
 		CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */; };
@@ -60,6 +64,10 @@
 		CC7C97271CE419DC00BEDB3E /* ProductReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductReportCell.swift; sourceTree = "<group>"; };
 		CC7C97291CE419E600BEDB3E /* DataReportCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataReportCell.swift; sourceTree = "<group>"; };
 		CC7C972B1CE4245700BEDB3E /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		CC7C972D1CE436B000BEDB3E /* TWUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWUser.swift; sourceTree = "<group>"; };
+		CC7C972F1CE4397C00BEDB3E /* TWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWSurvey.swift; sourceTree = "<group>"; };
+		CC7C97311CE4398F00BEDB3E /* TWProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWProduct.swift; sourceTree = "<group>"; };
+		CC7C97331CE4399B00BEDB3E /* TWData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWData.swift; sourceTree = "<group>"; };
 		CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTasksViewController.swift; sourceTree = "<group>"; };
 		CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ExtraColors.swift"; sourceTree = "<group>"; };
 		CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeedbackViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +253,10 @@
 		CCFEB4741CE02F5F00A47F9F /* models */ = {
 			isa = PBXGroup;
 			children = (
+				CC7C972D1CE436B000BEDB3E /* TWUser.swift */,
+				CC7C972F1CE4397C00BEDB3E /* TWSurvey.swift */,
+				CC7C97311CE4398F00BEDB3E /* TWProduct.swift */,
+				CC7C97331CE4399B00BEDB3E /* TWData.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -420,6 +432,7 @@
 				CC834C361CE213B3000EF83D /* ThankYouViewController.swift in Sources */,
 				CC7C97201CE4137C00BEDB3E /* SurveyReportViewController.swift in Sources */,
 				CC7C97281CE419DC00BEDB3E /* ProductReportCell.swift in Sources */,
+				CC7C972E1CE436B000BEDB3E /* TWUser.swift in Sources */,
 				CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */,
 				CCFEB47C1CE057C400A47F9F /* DisplayViewController.swift in Sources */,
 				CC834C3F1CE36B2E000EF83D /* TWBaseFormViewController.swift in Sources */,
@@ -427,13 +440,16 @@
 				CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */,
 				CC7C97221CE415ED00BEDB3E /* ProductReportViewController.swift in Sources */,
 				CC7C972A1CE419E600BEDB3E /* DataReportCell.swift in Sources */,
+				CC7C97341CE4399B00BEDB3E /* TWData.swift in Sources */,
 				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
 				CC7C97261CE419CE00BEDB3E /* SurveyReportCell.swift in Sources */,
 				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
+				CC7C97321CE4398F00BEDB3E /* TWProduct.swift in Sources */,
 				CC7C972C1CE4245700BEDB3E /* SettingsController.swift in Sources */,
 				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
 				CC7C971E1CE4053C00BEDB3E /* DashboardTabBarController.swift in Sources */,
 				CC834C4A1CE38A36000EF83D /* Enums.swift in Sources */,
+				CC7C97301CE4397C00BEDB3E /* TWSurvey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

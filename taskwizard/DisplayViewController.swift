@@ -96,10 +96,10 @@ class DisplayViewController: UIViewController {
     
     /* ==================================== IB Actions =========================================== */
     @IBAction func signInTapped(sender: UIButton) {
+        // Should check with sign In info from server
         if(true) {
-            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("HomeViewNavigationController")
-            viewController.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-            presentViewController(viewController, animated: true, completion: nil)
+            TWUser.isLoggedIn = true
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     

@@ -13,4 +13,11 @@ class SettingsController: TWBaseFormViewController {
     @IBAction func backButtonTapped(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func logoutButtonTapped(sender: AnyObject) {
+        // Also need to store in NSUserDefaults
+        TWUser.isLoggedIn = false
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }

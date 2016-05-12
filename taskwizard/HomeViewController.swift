@@ -16,13 +16,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUserDetails()
         setupViews()
     }
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        makeNavigationBarVisible = false
-        navigationController?.navigationBarHidden = true
+        // Check if user is logged in, else show the login screen
+        if((TWUser.isLoggedIn)!) {
+            super.viewWillAppear(animated)
+            makeNavigationBarVisible = false
+            navigationController?.navigationBarHidden = true
+        } else {
+            let loginViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginViewController") as! DisplayViewController
+            presentViewController(loginViewController, animated: true, completion: nil)
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -40,6 +47,11 @@ class HomeViewController: UIViewController {
         if(segue.identifier == "toTasks") {
             makeNavigationBarVisible = true
         }
+    }
+    /* ======================================= General Configs ===================================================== */
+    func setupUserDetails() {
+        // Should be done via NSUserDefaults
+        TWUser.isLoggedIn = false
     }
     
     /* =========================================== View Configs ===================================================== */
