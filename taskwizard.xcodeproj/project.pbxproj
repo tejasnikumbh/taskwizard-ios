@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7C971E1CE4053C00BEDB3E /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C971D1CE4053C00BEDB3E /* DashboardTabBarController.swift */; };
+		CC7C97201CE4137C00BEDB3E /* SurveyReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C971F1CE4137C00BEDB3E /* SurveyReportViewController.swift */; };
+		CC7C97221CE415ED00BEDB3E /* ProductReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97211CE415ED00BEDB3E /* ProductReportViewController.swift */; };
+		CC7C97241CE415FA00BEDB3E /* DataReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97231CE415FA00BEDB3E /* DataReportViewController.swift */; };
 		CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */; };
 		CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */; };
 		CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC7C971D1CE4053C00BEDB3E /* DashboardTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		CC7C971F1CE4137C00BEDB3E /* SurveyReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyReportViewController.swift; sourceTree = "<group>"; };
+		CC7C97211CE415ED00BEDB3E /* ProductReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductReportViewController.swift; sourceTree = "<group>"; };
+		CC7C97231CE415FA00BEDB3E /* DataReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataReportViewController.swift; sourceTree = "<group>"; };
 		CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTasksViewController.swift; sourceTree = "<group>"; };
 		CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ExtraColors.swift"; sourceTree = "<group>"; };
 		CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeedbackViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +103,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7C971C1CE4052000BEDB3E /* dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC7C971D1CE4053C00BEDB3E /* DashboardTabBarController.swift */,
+				CC7C971F1CE4137C00BEDB3E /* SurveyReportViewController.swift */,
+				CC7C97211CE415ED00BEDB3E /* ProductReportViewController.swift */,
+				CC7C97231CE415FA00BEDB3E /* DataReportViewController.swift */,
+			);
+			name = dashboard;
+			sourceTree = "<group>";
+		};
 		CC834C2A1CE0C7D4000EF83D /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,32 +138,15 @@
 			name = abstract;
 			sourceTree = "<group>";
 		};
-		CC834C411CE385F6000EF83D /* startapp_flow */ = {
-			isa = PBXGroup;
-			children = (
-				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
-				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
-			);
-			name = startapp_flow;
-			sourceTree = "<group>";
-		};
 		CC834C421CE3860E000EF83D /* tasks */ = {
 			isa = PBXGroup;
 			children = (
+				CC834C401CE38405000EF83D /* abstract */,
 				CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */,
 				CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */,
 				CC834C331CE0D802000EF83D /* SurveysViewController.swift */,
 			);
 			name = tasks;
-			sourceTree = "<group>";
-		};
-		CC834C431CE38645000EF83D /* payment_flow */ = {
-			isa = PBXGroup;
-			children = (
-				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
-				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
-			);
-			name = payment_flow;
 			sourceTree = "<group>";
 		};
 		CC834C481CE38A2A000EF83D /* common */ = {
@@ -221,10 +223,12 @@
 		CCFEB4731CE02F4D00A47F9F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CC834C431CE38645000EF83D /* payment_flow */,
+				CC7C971C1CE4052000BEDB3E /* dashboard */,
+				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
+				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
+				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
+				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
 				CC834C421CE3860E000EF83D /* tasks */,
-				CC834C411CE385F6000EF83D /* startapp_flow */,
-				CC834C401CE38405000EF83D /* abstract */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -400,15 +404,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */,
+				CC7C97241CE415FA00BEDB3E /* DataReportViewController.swift in Sources */,
 				CC834C361CE213B3000EF83D /* ThankYouViewController.swift in Sources */,
+				CC7C97201CE4137C00BEDB3E /* SurveyReportViewController.swift in Sources */,
 				CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */,
 				CCFEB47C1CE057C400A47F9F /* DisplayViewController.swift in Sources */,
 				CC834C3F1CE36B2E000EF83D /* TWBaseFormViewController.swift in Sources */,
 				CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */,
 				CC834C341CE0D802000EF83D /* SurveysViewController.swift in Sources */,
+				CC7C97221CE415ED00BEDB3E /* ProductReportViewController.swift in Sources */,
 				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
 				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
 				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
+				CC7C971E1CE4053C00BEDB3E /* DashboardTabBarController.swift in Sources */,
 				CC834C4A1CE38A36000EF83D /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
