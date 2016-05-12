@@ -10,4 +10,7 @@ import UIKit
 
 class SettingsController: TWBaseFormViewController {
 
+    @IBAction func backButtonTapped(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

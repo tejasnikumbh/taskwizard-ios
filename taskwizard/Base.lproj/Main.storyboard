@@ -400,7 +400,7 @@
             </objects>
             <point key="canvasLocation" x="351" y="260"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Task Wizard-->
         <scene sceneID="Rmd-ad-VEt">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RAR-yJ-Fp1" customClass="HomeViewController" customModule="taskwizard" customModuleProvider="target" sceneMemberID="viewController">
@@ -483,7 +483,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <segue destination="DQ1-uX-AjN" kind="show" id="KNY-rt-Hgb"/>
+                                                    <segue destination="DQ1-uX-AjN" kind="show" identifier="toTasks" id="KNY-rt-Hgb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mb-qE-spn">
@@ -506,7 +506,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <segue destination="7Yf-7K-aX1" kind="show" id="2Hh-AI-df2"/>
+                                                    <segue destination="7Yf-7K-aX1" kind="show" identifier="toTasks" id="2Hh-AI-df2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdz-1L-5yL">
@@ -529,7 +529,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <segue destination="8vG-bZ-bcU" kind="show" id="Md7-Hr-bAd"/>
+                                                    <segue destination="8vG-bZ-bcU" kind="show" identifier="toTasks" id="Md7-Hr-bAd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzl-Mc-fRj">
@@ -601,7 +601,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
-                                                    <segue destination="vSw-gq-rRK" kind="presentation" id="7mN-yS-Ojf"/>
+                                                    <segue destination="vSw-gq-rRK" kind="presentation" modalTransitionStyle="flipHorizontal" id="7mN-yS-Ojf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -826,7 +826,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="IMR-m7-3S2"/>
+                    <navigationItem key="navigationItem" title="Task Wizard" id="IMR-m7-3S2"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
@@ -4364,6 +4364,7 @@
                                                         </variation>
                                                         <connections>
                                                             <action selector="backButtonTapped:" destination="QhF-Ts-c7V" eventType="touchUpInside" id="Lcn-ZM-zgi"/>
+                                                            <action selector="backButtonTapped:" destination="vSw-gq-rRK" eventType="touchUpInside" id="ZAf-MW-S1L"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
