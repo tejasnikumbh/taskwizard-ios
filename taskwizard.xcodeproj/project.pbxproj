@@ -28,6 +28,7 @@
 		CC834C3C1CE2C9E0000EF83D /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC834C3B1CE2C9E0000EF83D /* Stripe.framework */; };
 		CC834C3F1CE36B2E000EF83D /* TWBaseFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */; };
 		CC834C4A1CE38A36000EF83D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C491CE38A36000EF83D /* Enums.swift */; };
+		CCCAB9B21CEBF1BE00DCBC96 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCAB9B11CEBF1BE00DCBC96 /* SignUpViewController.swift */; };
 		CCFEB4451CE02F3700A47F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */; };
 		CCFEB4471CE02F3700A47F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */; };
 		CCFEB44A1CE02F3700A47F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFEB4481CE02F3700A47F9F /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		CC834C3B1CE2C9E0000EF83D /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = ../Stripe.framework; sourceTree = "<group>"; };
 		CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWBaseFormViewController.swift; sourceTree = "<group>"; };
 		CC834C491CE38A36000EF83D /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CCCAB9B11CEBF1BE00DCBC96 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CCFEB4411CE02F3600A47F9F /* taskwizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskwizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFEB4441CE02F3700A47F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,15 @@
 			name = common;
 			sourceTree = "<group>";
 		};
+		CCCAB9B31CEBF1C300DCBC96 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
+				CCCAB9B11CEBF1BE00DCBC96 /* SignUpViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
 		CCFEB4381CE02F3600A47F9F = {
 			isa = PBXGroup;
 			children = (
@@ -238,12 +249,12 @@
 		CCFEB4731CE02F4D00A47F9F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CCCAB9B31CEBF1C300DCBC96 /* login */,
 				CC834C401CE38405000EF83D /* abstract */,
 				CC7C971C1CE4052000BEDB3E /* dashboard */,
 				CC834C421CE3860E000EF83D /* tasks */,
 				CCFEB4461CE02F3700A47F9F /* HomeViewController.swift */,
 				CC7C972B1CE4245700BEDB3E /* SettingsController.swift */,
-				CCFEB47B1CE057C400A47F9F /* DisplayViewController.swift */,
 				CC834C351CE213B3000EF83D /* ThankYouViewController.swift */,
 				CC834C371CE2141C000EF83D /* PaymentViewController.swift */,
 			);
@@ -445,6 +456,7 @@
 				CC7C97261CE419CE00BEDB3E /* SurveyReportCell.swift in Sources */,
 				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
 				CC7C97321CE4398F00BEDB3E /* TWProduct.swift in Sources */,
+				CCCAB9B21CEBF1BE00DCBC96 /* SignUpViewController.swift in Sources */,
 				CC7C972C1CE4245700BEDB3E /* SettingsController.swift in Sources */,
 				CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */,
 				CC7C971E1CE4053C00BEDB3E /* DashboardTabBarController.swift in Sources */,
