@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: TWBaseFormViewController {
+class SignUpViewController: TWBaseFormScrollHijackViewController {
 
     @IBAction func backButtonTapped(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)

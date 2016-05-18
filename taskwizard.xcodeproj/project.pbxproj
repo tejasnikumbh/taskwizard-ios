@@ -19,6 +19,7 @@
 		CC7C97301CE4397C00BEDB3E /* TWSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C972F1CE4397C00BEDB3E /* TWSurvey.swift */; };
 		CC7C97321CE4398F00BEDB3E /* TWProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97311CE4398F00BEDB3E /* TWProduct.swift */; };
 		CC7C97341CE4399B00BEDB3E /* TWData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7C97331CE4399B00BEDB3E /* TWData.swift */; };
+		CC7CF70D1CEBFEDB001EDBB2 /* TWBaseFormScrollHijackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CF70C1CEBFEDB001EDBB2 /* TWBaseFormScrollHijackViewController.swift */; };
 		CC834C291CE0A6A4000EF83D /* DataTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */; };
 		CC834C2C1CE0C7E4000EF83D /* UIColor+ExtraColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */; };
 		CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */; };
@@ -69,6 +70,7 @@
 		CC7C972F1CE4397C00BEDB3E /* TWSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWSurvey.swift; sourceTree = "<group>"; };
 		CC7C97311CE4398F00BEDB3E /* TWProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWProduct.swift; sourceTree = "<group>"; };
 		CC7C97331CE4399B00BEDB3E /* TWData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWData.swift; sourceTree = "<group>"; };
+		CC7CF70C1CEBFEDB001EDBB2 /* TWBaseFormScrollHijackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWBaseFormScrollHijackViewController.swift; sourceTree = "<group>"; };
 		CC834C281CE0A6A4000EF83D /* DataTasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTasksViewController.swift; sourceTree = "<group>"; };
 		CC834C2B1CE0C7E4000EF83D /* UIColor+ExtraColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ExtraColors.swift"; sourceTree = "<group>"; };
 		CC834C311CE0D7E9000EF83D /* ProductFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductFeedbackViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				CC834C3E1CE36B2E000EF83D /* TWBaseFormViewController.swift */,
+				CC7CF70C1CEBFEDB001EDBB2 /* TWBaseFormScrollHijackViewController.swift */,
 			);
 			name = abstract;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				CC7C97341CE4399B00BEDB3E /* TWData.swift in Sources */,
 				CC834C321CE0D7E9000EF83D /* ProductFeedbackViewController.swift in Sources */,
 				CC7C97261CE419CE00BEDB3E /* SurveyReportCell.swift in Sources */,
+				CC7CF70D1CEBFEDB001EDBB2 /* TWBaseFormScrollHijackViewController.swift in Sources */,
 				CC834C381CE2141C000EF83D /* PaymentViewController.swift in Sources */,
 				CC7C97321CE4398F00BEDB3E /* TWProduct.swift in Sources */,
 				CCCAB9B21CEBF1BE00DCBC96 /* SignUpViewController.swift in Sources */,

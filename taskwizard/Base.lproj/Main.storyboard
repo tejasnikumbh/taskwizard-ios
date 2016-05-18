@@ -425,7 +425,7 @@
                     <connections>
                         <outlet property="emailField" destination="gG6-gC-gda" id="yJ1-Zv-Bw5"/>
                         <outlet property="passwordField" destination="3av-61-UCr" id="wWF-Hr-wyl"/>
-                        <outlet property="rootScrollView" destination="b7I-3Y-Zbz" id="QNZ-Ib-q0G"/>
+                        <outlet property="rootScrollView" destination="b7I-3Y-Zbz" id="wlo-Q7-We9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rs9-F4-Z1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5346,7 +5346,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="rootScrollView" destination="kN5-EO-YqL" id="2Uw-2V-KdI"/>
+                        <outlet property="rootScrollView" destination="kN5-EO-YqL" id="QMW-2z-hCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oO-X7-ZsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
